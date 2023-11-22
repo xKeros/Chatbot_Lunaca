@@ -11,8 +11,8 @@ os.environ["OPENAI_API_KEY"] = a_env_vars.OPENAI_API_KEY
 # 3. Crear el LLM
 llm = ChatOpenAI(temperature=0, model_name='gpt-3.5-turbo')
 
-# 4. Crear la cadena
-db = SQLDatabase.from_uri("mysql+mysqlconnector://root:@localhost/errores_frio")
+# 4. Crear la cadenav
+db = SQLDatabase.from_uri("mysql+mysqlconnector://ijsvet869e4tf1vn41gv:pscale_pw_tFhPNue9fqRCY9gNpm8i0dfdkYdC5wYNkRVzEi6kwyJ@aws.connect.psdb.cloud/errores_camiones")
 cadena = SQLDatabaseChain.from_llm(llm=llm, db=db, verbose=False)
 
 # 5. Formato personalizado de respuesta
